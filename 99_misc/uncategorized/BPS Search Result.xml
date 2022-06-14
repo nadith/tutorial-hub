@@ -1,0 +1,222 @@
+<xml xmlns:s='uuid:BDC6E3F0-6DA3-11d1-A2A3-00AA00C14882'
+	xmlns:dt='uuid:C2F41010-65B3-11d1-A29F-00AA00C14882'
+	xmlns:rs='urn:schemas-microsoft-com:rowset'
+	xmlns:z='#RowsetSchema'>
+<s:Schema id='RowsetSchema'>
+	<s:ElementType name='row' content='eltOnly' rs:updatable='true'>
+		<s:AttributeType name='InternalID' rs:number='1' rs:writeunknown='true' rs:basecatalog='BPSPATIENTS' rs:basetable='Patients'
+			 rs:basecolumn='InternalID' rs:keycolumn='true'>
+			<s:datatype dt:type='int' dt:maxLength='4' rs:precision='10' rs:fixedlength='true' rs:maybenull='false'/>
+		</s:AttributeType>
+		<s:AttributeType name='ExternalID' rs:number='2' rs:nullable='true' rs:writeunknown='true' rs:basecatalog='BPSPATIENTS'
+			 rs:basetable='Patients' rs:basecolumn='ExternalID'>
+			<s:datatype dt:type='string' rs:dbtype='str' dt:maxLength='12' rs:fixedlength='true'/>
+		</s:AttributeType>
+		<s:AttributeType name='StatusText' rs:number='3' rs:nullable='true' rs:writeunknown='true' rs:basecatalog='BPSPATIENTS'
+			 rs:basetable='PatientStatus' rs:basecolumn='StatusText'>
+			<s:datatype dt:type='string' rs:dbtype='str' dt:maxLength='12' rs:fixedlength='true'/>
+		</s:AttributeType>
+		<s:AttributeType name='Title' rs:number='4' rs:writeunknown='true' rs:basecatalog='BPSPATIENTS' rs:basetable='Titles'
+			 rs:basecolumn='Title'>
+			<s:datatype dt:type='string' rs:dbtype='str' dt:maxLength='30' rs:fixedlength='true' rs:maybenull='false'/>
+		</s:AttributeType>
+		<s:AttributeType name='Firstname' rs:number='5' rs:nullable='true' rs:writeunknown='true' rs:basecatalog='BPSPATIENTS'
+			 rs:basetable='Patients' rs:basecolumn='Firstname'>
+			<s:datatype dt:type='string' rs:dbtype='str' dt:maxLength='40' rs:fixedlength='true'/>
+		</s:AttributeType>
+		<s:AttributeType name='Middlename' rs:number='6' rs:nullable='true' rs:writeunknown='true' rs:basecatalog='BPSPATIENTS'
+			 rs:basetable='Patients' rs:basecolumn='Middlename'>
+			<s:datatype dt:type='string' rs:dbtype='str' dt:maxLength='30' rs:fixedlength='true'/>
+		</s:AttributeType>
+		<s:AttributeType name='Surname' rs:number='7' rs:nullable='true' rs:writeunknown='true' rs:basecatalog='BPSPATIENTS'
+			 rs:basetable='Patients' rs:basecolumn='Surname'>
+			<s:datatype dt:type='string' rs:dbtype='str' dt:maxLength='40' rs:fixedlength='true'/>
+		</s:AttributeType>
+		<s:AttributeType name='Preferredname' rs:number='8' rs:nullable='true' rs:writeunknown='true' rs:basecatalog='BPSPATIENTS'
+			 rs:basetable='Patients' rs:basecolumn='Preferredname'>
+			<s:datatype dt:type='string' rs:dbtype='str' dt:maxLength='30' rs:fixedlength='true'/>
+		</s:AttributeType>
+		<s:AttributeType name='Address1' rs:number='9' rs:nullable='true' rs:writeunknown='true' rs:basecatalog='BPSPATIENTS'
+			 rs:basetable='Patients' rs:basecolumn='Address1'>
+			<s:datatype dt:type='string' rs:dbtype='str' dt:maxLength='40' rs:fixedlength='true'/>
+		</s:AttributeType>
+		<s:AttributeType name='Address2' rs:number='10' rs:nullable='true' rs:writeunknown='true' rs:basecatalog='BPSPATIENTS'
+			 rs:basetable='Patients' rs:basecolumn='Address2'>
+			<s:datatype dt:type='string' rs:dbtype='str' dt:maxLength='40' rs:fixedlength='true'/>
+		</s:AttributeType>
+		<s:AttributeType name='City' rs:number='11' rs:nullable='true' rs:writeunknown='true' rs:basecatalog='BPSPATIENTS'
+			 rs:basetable='Patients' rs:basecolumn='City'>
+			<s:datatype dt:type='string' rs:dbtype='str' dt:maxLength='40' rs:fixedlength='true'/>
+		</s:AttributeType>
+		<s:AttributeType name='Postcode' rs:number='12' rs:nullable='true' rs:writeunknown='true' rs:basecatalog='BPSPATIENTS'
+			 rs:basetable='Patients' rs:basecolumn='Postcode'>
+			<s:datatype dt:type='string' rs:dbtype='str' dt:maxLength='4' rs:fixedlength='true'/>
+		</s:AttributeType>
+		<s:AttributeType name='PostalAddress' rs:number='13' rs:nullable='true' rs:writeunknown='true' rs:basecatalog='BPSPATIENTS'
+			 rs:basetable='Patients' rs:basecolumn='PostalAddress'>
+			<s:datatype dt:type='string' rs:dbtype='str' dt:maxLength='40' rs:fixedlength='true'/>
+		</s:AttributeType>
+		<s:AttributeType name='PostalCity' rs:number='14' rs:nullable='true' rs:writeunknown='true' rs:basecatalog='BPSPATIENTS'
+			 rs:basetable='Patients' rs:basecolumn='PostalCity'>
+			<s:datatype dt:type='string' rs:dbtype='str' dt:maxLength='40' rs:fixedlength='true'/>
+		</s:AttributeType>
+		<s:AttributeType name='PostalPostcode' rs:number='15' rs:nullable='true' rs:writeunknown='true' rs:basecatalog='BPSPATIENTS'
+			 rs:basetable='Patients' rs:basecolumn='PostalPostcode'>
+			<s:datatype dt:type='string' rs:dbtype='str' dt:maxLength='4' rs:fixedlength='true'/>
+		</s:AttributeType>
+		<s:AttributeType name='DOB' rs:number='16' rs:nullable='true' rs:writeunknown='true' rs:basecatalog='BPSPATIENTS'
+			 rs:basetable='Patients' rs:basecolumn='DOB'>
+			<s:datatype dt:type='dateTime' rs:dbtype='timestamp' dt:maxLength='16' rs:scale='3' rs:precision='23' rs:fixedlength='true'/>
+		</s:AttributeType>
+		<s:AttributeType name='Sex' rs:number='17' rs:writeunknown='true' rs:basecatalog='BPSPATIENTS' rs:basetable='Sex'
+			 rs:basecolumn='Sex'>
+			<s:datatype dt:type='string' rs:dbtype='str' dt:maxLength='10' rs:fixedlength='true' rs:maybenull='false'/>
+		</s:AttributeType>
+		<s:AttributeType name='Ethnicity' rs:number='18' rs:writeunknown='true' rs:basecatalog='BPSPATIENTS' rs:basetable='Ethnicity'
+			 rs:basecolumn='ETHNICTYPE'>
+			<s:datatype dt:type='string' rs:dbtype='str' dt:maxLength='50' rs:fixedlength='true' rs:maybenull='false'/>
+		</s:AttributeType>
+		<s:AttributeType name='HomePhone' rs:number='19' rs:nullable='true' rs:writeunknown='true' rs:basecatalog='BPSPATIENTS'
+			 rs:basetable='Patients' rs:basecolumn='HomePhone'>
+			<s:datatype dt:type='string' rs:dbtype='str' dt:maxLength='14' rs:fixedlength='true'/>
+		</s:AttributeType>
+		<s:AttributeType name='WorkPhone' rs:number='20' rs:nullable='true' rs:writeunknown='true' rs:basecatalog='BPSPATIENTS'
+			 rs:basetable='Patients' rs:basecolumn='WorkPhone'>
+			<s:datatype dt:type='string' rs:dbtype='str' dt:maxLength='14' rs:fixedlength='true'/>
+		</s:AttributeType>
+		<s:AttributeType name='MobilePhone' rs:number='21' rs:nullable='true' rs:writeunknown='true' rs:basecatalog='BPSPATIENTS'
+			 rs:basetable='Patients' rs:basecolumn='MobilePhone'>
+			<s:datatype dt:type='string' rs:dbtype='str' dt:maxLength='14' rs:fixedlength='true'/>
+		</s:AttributeType>
+		<s:AttributeType name='Email' rs:number='22' rs:nullable='true' rs:writeunknown='true' rs:basecatalog='BPSPATIENTS'
+			 rs:basetable='Email' rs:basecolumn='Email'>
+			<s:datatype dt:type='string' rs:dbtype='str' dt:maxLength='250'/>
+		</s:AttributeType>
+		<s:AttributeType name='MedicareNo' rs:number='23' rs:nullable='true' rs:writeunknown='true' rs:basecatalog='BPSPATIENTS'
+			 rs:basetable='Patients' rs:basecolumn='MedicareNo'>
+			<s:datatype dt:type='string' rs:dbtype='str' dt:maxLength='13' rs:fixedlength='true'/>
+		</s:AttributeType>
+		<s:AttributeType name='MedicareLineNo' rs:number='24' rs:nullable='true' rs:writeunknown='true' rs:basecatalog='BPSPATIENTS'
+			 rs:basetable='Patients' rs:basecolumn='MedicareLineNo'>
+			<s:datatype dt:type='string' rs:dbtype='str' dt:maxLength='1' rs:fixedlength='true'/>
+		</s:AttributeType>
+		<s:AttributeType name='MedicareExpiry' rs:number='25' rs:nullable='true' rs:writeunknown='true' rs:basecatalog='BPSPATIENTS'
+			 rs:basetable='Patients' rs:basecolumn='MedicareExpiry'>
+			<s:datatype dt:type='string' rs:dbtype='str' dt:maxLength='10' rs:fixedlength='true'/>
+		</s:AttributeType>
+		<s:AttributeType name='PensionNo' rs:number='26' rs:nullable='true' rs:writeunknown='true' rs:basecatalog='BPSPATIENTS'
+			 rs:basetable='Patients' rs:basecolumn='PensionNo'>
+			<s:datatype dt:type='string' rs:dbtype='str' dt:maxLength='14' rs:fixedlength='true'/>
+		</s:AttributeType>
+		<s:AttributeType name='PensionStart' rs:number='27' rs:nullable='true' rs:writeunknown='true' rs:basecatalog='BPSPATIENTS'
+			 rs:basetable='Patients' rs:basecolumn='PensionStart'>
+			<s:datatype dt:type='dateTime' rs:dbtype='timestamp' dt:maxLength='16' rs:scale='3' rs:precision='23' rs:fixedlength='true'/>
+		</s:AttributeType>
+		<s:AttributeType name='PensionExpiry' rs:number='28' rs:nullable='true' rs:writeunknown='true' rs:basecatalog='BPSPATIENTS'
+			 rs:basetable='Patients' rs:basecolumn='PensionExpiry'>
+			<s:datatype dt:type='dateTime' rs:dbtype='timestamp' dt:maxLength='16' rs:scale='3' rs:precision='23' rs:fixedlength='true'/>
+		</s:AttributeType>
+		<s:AttributeType name='PensionType' rs:number='29' rs:writeunknown='true' rs:basecatalog='BPSPATIENTS' rs:basetable='PensionType'
+			 rs:basecolumn='PensionType'>
+			<s:datatype dt:type='string' rs:dbtype='str' dt:maxLength='40' rs:fixedlength='true' rs:maybenull='false'/>
+		</s:AttributeType>
+		<s:AttributeType name='DVANo' rs:number='30' rs:nullable='true' rs:writeunknown='true' rs:basecatalog='BPSPATIENTS'
+			 rs:basetable='Patients' rs:basecolumn='DVANo'>
+			<s:datatype dt:type='string' rs:dbtype='str' dt:maxLength='14' rs:fixedlength='true'/>
+		</s:AttributeType>
+		<s:AttributeType name='SafetyNetNo' rs:number='31' rs:nullable='true' rs:writeunknown='true' rs:basecatalog='BPSPATIENTS'
+			 rs:basetable='Patients' rs:basecolumn='SafetyNetNo'>
+			<s:datatype dt:type='string' rs:dbtype='str' dt:maxLength='14' rs:fixedlength='true'/>
+		</s:AttributeType>
+		<s:AttributeType name='RecordNo' rs:number='32' rs:nullable='true' rs:writeunknown='true' rs:basecatalog='BPSPATIENTS'
+			 rs:basetable='Patients' rs:basecolumn='RecordNo'>
+			<s:datatype dt:type='string' rs:dbtype='str' dt:maxLength='10' rs:fixedlength='true'/>
+		</s:AttributeType>
+		<s:AttributeType name='HCHTier' rs:number='33' rs:nullable='true' rs:writeunknown='true' rs:basecatalog='BPSPATIENTS'
+			 rs:basetable='HCHTiers' rs:basecolumn='TIERNAME'>
+			<s:datatype dt:type='string' rs:dbtype='str' dt:maxLength='12' rs:fixedlength='true'/>
+		</s:AttributeType>
+		<s:AttributeType name='HCHStart' rs:number='34' rs:nullable='true' rs:writeunknown='true' rs:basecatalog='BPSPATIENTS'
+			 rs:basetable='Patients' rs:basecolumn='HCHCURRENT'>
+			<s:datatype dt:type='dateTime' rs:dbtype='timestamp' dt:maxLength='16' rs:scale='3' rs:precision='23' rs:fixedlength='true'/>
+		</s:AttributeType>
+		<s:AttributeType name='Religion' rs:number='35' rs:nullable='true' rs:writeunknown='true' rs:basecatalog='BPSPATIENTS'
+			 rs:basetable='Patients' rs:basecolumn='Religion'>
+			<s:datatype dt:type='string' rs:dbtype='str' dt:maxLength='20' rs:fixedlength='true'/>
+		</s:AttributeType>
+		<s:AttributeType name='HealthFundName' rs:number='36' rs:nullable='true' rs:writeunknown='true' rs:basecatalog='BPSPATIENTS'
+			 rs:basetable='Patients' rs:basecolumn='HealthFundName'>
+			<s:datatype dt:type='string' rs:dbtype='str' dt:maxLength='100'/>
+		</s:AttributeType>
+		<s:AttributeType name='HealthFundNo' rs:number='37' rs:nullable='true' rs:writeunknown='true' rs:basecatalog='BPSPATIENTS'
+			 rs:basetable='Patients' rs:basecolumn='HealthFundNo'>
+			<s:datatype dt:type='string' rs:dbtype='str' dt:maxLength='20' rs:fixedlength='true'/>
+		</s:AttributeType>
+		<s:AttributeType name='IHI' rs:number='38' rs:nullable='true' rs:writeunknown='true' rs:basecatalog='BPSPATIENTS'
+			 rs:basetable='Patients' rs:basecolumn='IHI'>
+			<s:datatype dt:type='string' rs:dbtype='str' dt:maxLength='16' rs:fixedlength='true'/>
+		</s:AttributeType>
+		<s:AttributeType name='UsualDoctor' rs:number='39' rs:nullable='true'>
+			<s:datatype dt:type='string' rs:dbtype='str' dt:maxLength='162'/>
+		</s:AttributeType>
+		<s:AttributeType name='Gender' rs:number='40' rs:writeunknown='true' rs:basecatalog='BPSPATIENTS' rs:basetable='Gender'
+			 rs:basecolumn='Gender'>
+			<s:datatype dt:type='string' rs:dbtype='str' dt:maxLength='20' rs:maybenull='false'/>
+		</s:AttributeType>
+		<s:AttributeType name='TITLECODE' rs:number='41' rs:writeunknown='true' rs:basecatalog='BPSPATIENTS' rs:basetable='Titles'
+			 rs:basecolumn='TITLECODE' rs:keycolumn='true' rs:hidden='true'>
+			<s:datatype dt:type='int' dt:maxLength='4' rs:precision='10' rs:fixedlength='true' rs:maybenull='false'/>
+		</s:AttributeType>
+		<s:AttributeType name='SEXCODE' rs:number='42' rs:writeunknown='true' rs:basecatalog='BPSPATIENTS' rs:basetable='Sex'
+			 rs:basecolumn='SEXCODE' rs:keycolumn='true' rs:hidden='true'>
+			<s:datatype dt:type='int' dt:maxLength='4' rs:precision='10' rs:fixedlength='true' rs:maybenull='false'/>
+		</s:AttributeType>
+		<s:AttributeType name='GenderCode' rs:number='43' rs:writeunknown='true' rs:basecatalog='BPSPATIENTS' rs:basetable='Gender'
+			 rs:basecolumn='GenderCode' rs:keycolumn='true' rs:hidden='true'>
+			<s:datatype dt:type='int' dt:maxLength='4' rs:precision='10' rs:fixedlength='true' rs:maybenull='false'/>
+		</s:AttributeType>
+		<s:AttributeType name='PENSIONCODE' rs:number='44' rs:writeunknown='true' rs:basecatalog='BPSPATIENTS' rs:basetable='PensionType'
+			 rs:basecolumn='PENSIONCODE' rs:keycolumn='true' rs:hidden='true'>
+			<s:datatype dt:type='int' dt:maxLength='4' rs:precision='10' rs:fixedlength='true' rs:maybenull='false'/>
+		</s:AttributeType>
+		<s:AttributeType name='ETHNICCODE' rs:number='45' rs:writeunknown='true' rs:basecatalog='BPSPATIENTS' rs:basetable='Ethnicity'
+			 rs:basecolumn='ETHNICCODE' rs:keycolumn='true' rs:hidden='true'>
+			<s:datatype dt:type='int' dt:maxLength='4' rs:precision='10' rs:fixedlength='true' rs:maybenull='false'/>
+		</s:AttributeType>
+		<s:AttributeType name='TIERCODE' rs:number='46' rs:writeunknown='true' rs:basecatalog='BPSPATIENTS' rs:basetable='HCHTiers'
+			 rs:basecolumn='TIERCODE' rs:keycolumn='true' rs:hidden='true'>
+			<s:datatype dt:type='int' dt:maxLength='4' rs:precision='10' rs:fixedlength='true' rs:maybenull='false'/>
+		</s:AttributeType>
+		<s:AttributeType name='USERID' rs:number='47' rs:basecatalog='BPSPATIENTS' rs:basetable='Users' rs:basecolumn='USERID'
+			 rs:keycolumn='true' rs:hidden='true' rs:autoincrement='true'>
+			<s:datatype dt:type='int' dt:maxLength='4' rs:precision='10' rs:fixedlength='true' rs:maybenull='false'/>
+		</s:AttributeType>
+		<s:AttributeType name='c47' rs:name='TITLECODE' rs:number='48' rs:writeunknown='true' rs:basecatalog='BPSPATIENTS'
+			 rs:basetable='Titles' rs:basecolumn='TITLECODE' rs:keycolumn='true' rs:hidden='true'>
+			<s:datatype dt:type='int' dt:maxLength='4' rs:precision='10' rs:fixedlength='true' rs:maybenull='false'/>
+		</s:AttributeType>
+		<s:AttributeType name='RECORDID' rs:number='49' rs:nullable='true' rs:basecatalog='BPSPATIENTS' rs:basetable='Email'
+			 rs:basecolumn='RECORDID' rs:keycolumn='true' rs:hidden='true' rs:autoincrement='true'>
+			<s:datatype dt:type='int' dt:maxLength='4' rs:precision='10' rs:fixedlength='true'/>
+		</s:AttributeType>
+		<s:extends type='rs:rowbase'/>
+	</s:ElementType>
+</s:Schema>
+<rs:data>
+	<z:row InternalID='26546' StatusText='Active      ' Title='                              ' Address1='6 Bongiovanni Crt                       '
+		 City='Lesmurdie                               ' Postcode='6067' PostalAddress='6 Bongiovanni Crt                       '
+		 PostalCity='Lesmurdie                               ' PostalPostcode='6067' DOB='2021-08-14T00:00:00' Sex='Male      '
+		 Ethnicity='                                                  ' Email='jdvmarelich@gmail.com' MedicareNo='6149554159   '
+		 MedicareLineNo='2' MedicareExpiry='04/2024   ' PensionType='                                        ' RecordNo='26546     '
+		 HCHTier='Nil         ' UsualDoctor='' Gender='' TITLECODE='0' SEXCODE='2' GenderCode='0' PENSIONCODE='0' ETHNICCODE='0'
+		 TIERCODE='0' USERID='0' c47='0' RECORDID='8223'/>
+	<z:row InternalID='26548' StatusText='Active      ' Title='Mr                            ' Firstname='Jeremy                                  '
+		 Surname='Marelich                                ' Address1='6 Bongiovanni Crt                       ' City='Lesmurdie                               '
+		 Postcode='6076' PostalAddress='6 Bongiovanni Crt                       ' PostalCity='Lesmurdie                               '
+		 PostalPostcode='6076' DOB='1997-01-28T00:00:00' Sex='Male      ' Ethnicity='                                                  '
+		 MobilePhone='0424266725    ' Email='jdvmarelich@gmail.com' MedicareNo='6149554159   ' MedicareLineNo='2' MedicareExpiry='04/2024   '
+		 PensionType='                                        ' RecordNo='26548     ' HCHTier='Nil         ' UsualDoctor=''
+		 Gender='' TITLECODE='1' SEXCODE='2' GenderCode='0' PENSIONCODE='0' ETHNICCODE='0' TIERCODE='0' USERID='0' c47='0'
+		 RECORDID='8224'/>
+</rs:data>
+</xml>

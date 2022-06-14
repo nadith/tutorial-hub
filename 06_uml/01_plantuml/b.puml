@@ -1,0 +1,128 @@
+@startmindmap
+<style>
+mindmapDiagram {
+.green {
+BackgroundColor lightgreen
+}
+.rose {
+BackgroundColor #FFBBCC
+}
+.your_style_name {
+BackgroundColor lightblue
+}
+}
+</style>
+* Colors
+** Green <<green>>
+** Rose <<rose>>
+** Blue <<your_style_name>>
+@endmindmap
+
+@startuml
+skinparam class {
+BackgroundColor DarkSeaGreen
+BorderColor Red
+}
+class Dummy {
+    test
+}
+
+skinparam class {
+BackgroundColor Red
+BorderColor Yellow
+}
+
+class Dummy {
+    test
+}
+@enduml
+
+@startuml
+abstract class alias #Red {
+    +{static} int PUBLIC_CLASS_VARIABLE
+    -string privateVariable
+    ~void packagePrivateMethod()
+    #{abstract} char protectedMethod(int param)
+}
+@enduml
+
+@startuml
+skinparam handwritten true
+skinparam class {
+BackgroundColor DarkSeaGreen
+BorderColor DarkSlateGray
+BackgroundColor<< Main >> YellowGreen
+BorderColor<< Main >> YellowGreen
+}
+class alias <<Main>> {
+    +{static} int PUBLIC_CLASS_VARIABLE
+    -string privateVariable
+    ~void packagePrivateMethod()
+    #{abstract} char protectedMethod(int param)
+}
+@enduml
+
+@startuml
+skinparam handwritten true
+skinparam usecase {
+BackgroundColor DarkSeaGreen
+BorderColor DarkSlateGray
+BackgroundColor<< Main >> YellowGreen
+BorderColor<< Main >> YellowGreen
+ArrowColor Olive
+ActorBorderColor black
+ActorFontName Courier
+ActorBackgroundColor<< Human >> Gold
+}
+User << Human >>
+:Main Database: as MySql << Application >>
+(Start) << One Shot >>
+(Use the application) as (Use) << Main >>
+User -> (Start)
+User --> (Use)
+MySql --> (Use)
+@enduml
+
+
+@startuml
+skinparam backgroundColor LightYellow
+skinparam state {
+StartColor MediumBlue
+EndColor Red
+BackgroundColor Peru
+BackgroundColor<<Warning>> Olive
+BorderColor Gray
+FontName Impact
+}
+[*] --> NotShooting
+state "Not Shooting State" as NotShooting {
+state "Idle mode" as Idle <<Warning>>
+state "Configuring mode" as Configuring
+[*] --> Idle
+Idle --> Configuring : EvConfig
+Configuring --> Idle : EvConfig
+}
+NotShooting --> [*]
+@enduml
+
+@startuml
+class Foo1 #red ##00FFFF {
+}
+
+class FooDashed ##[dashed]blue {
+}
+
+class FooDotted ##[dotted]blue {
+}
+
+class FooBold ##[bold]00FFFF {
+}
+
+@enduml
+
+
+@startuml
+class "Test ME" << (S,#00ffff) >>
+class System << (S,#FF7700) Singleton >>
+class Date << (D,orchid) >>
+@enduml

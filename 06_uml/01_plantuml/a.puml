@@ -1,0 +1,52 @@
+' >Generate URL for Current Diagram 
+' will generate a URL for the current diagram, which can be used to share the 
+' diagram with others. 
+' Goto: //www.plantuml.com/plantuml/<generated_url>
+
+@startuml
+Class01 << generics >> <|-- Class02
+Class03 *-- Class04
+Class05 o-- Class06
+Class07 .. Class08
+Class09 -- Class10
+@enduml
+
+
+@startuml
+
+skinparam class {
+BackgroundColor DarkSeaGreen
+BorderColor Red
+}
+
+class Dummy {
+test
+}
+@enduml
+
+
+@startuml
+' !theme spacelab ` PUML Theme Gallery https://the-lum.github.io/puml-themes-gallery/
+abstract abstract
+abstract class "abstract class"
+annotation annotation
+circle circle
+() circle_short_form
+class class
+diamond diamond
+<> diamond_short_form
+entity entity
+enum enum
+interface interface
+@enduml
+
+
+@startuml
+node n
+note right of n
+<#FBFB77,#00ffff>|= Husky / Yorkie |= Foo |
+| SourceTree1 | foo1 |
+| ST2 | foo2 |
+end note
+@enduml
+

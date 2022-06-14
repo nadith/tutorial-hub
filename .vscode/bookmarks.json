@@ -1,0 +1,29 @@
+{
+	"files": [
+		{
+			"path": "00_environments/01_vscode/bugs.py",
+			"bookmarks": [
+				{
+					"line": 3,
+					"column": 20,
+					"label": ""
+				},
+				{
+					"line": 9,
+					"column": 15,
+					"label": ""
+				}
+			]
+		},
+		{
+			"path": "01_python/test.py",
+			"bookmarks": [
+				{
+					"line": 3,
+					"column": 33,
+					"label": ""
+				}
+			]
+		}
+	]
+}

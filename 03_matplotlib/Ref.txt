@@ -1,0 +1,5 @@
+# Good set of plot tutorials
+# Ref: riptutorial.com/matplotlib/example/14063/plot-with-gridlines
+
+# Advanced plotting
+# https://python4astronomers.github.io/plotting/advanced.html

@@ -1,0 +1,49 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "..\\..\\..\\..\\..\\..\\..\\anaconda3\\Lib\\site-packages\\fastai"
+		}
+	],
+	"settings": {
+		"workbench.colorCustomizations": {
+			"activityBar.activeBackground": "#35757e",
+			"activityBar.activeBorder": "#d08fc8",
+			"activityBar.background": "#35757e",
+			"activityBar.foreground": "#e7e7e7",
+			"activityBar.inactiveForeground": "#e7e7e799",
+			"activityBarBadge.background": "#d08fc8",
+			"activityBarBadge.foreground": "#15202b",
+			"sash.hoverBorder": "#35757e",
+			"statusBar.background": "#26545a",
+			"statusBar.foreground": "#e7e7e7",
+			"statusBarItem.hoverBackground": "#35757e",
+			"statusBarItem.remoteBackground": "#26545a",
+			"statusBarItem.remoteForeground": "#e7e7e7",
+			"titleBar.activeBackground": "#26545a",
+			"titleBar.activeForeground": "#e7e7e7",
+			"titleBar.inactiveBackground": "#26545a99",
+			"titleBar.inactiveForeground": "#e7e7e799",
+			"editorGroup.border": "#35757e",
+			"panel.border": "#35757e",
+			"statusBar.debuggingBackground": "#5a2c26",
+			"statusBar.debuggingForeground": "#e7e7e7"
+		},
+		"peacock.color": "#26545A"
+	},
+	"launch": {
+		"version": "0.2.0",
+		"configurations": [
+			{
+				"name": "Python: Current File",
+				"type": "python",
+				"request": "launch",
+				"program": "${file}",
+				"console": "integratedTerminal",
+				"justMyCode": true
+			}
+		]
+	}
+}
